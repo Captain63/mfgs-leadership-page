@@ -1,0 +1,2045 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+  
+    <title>Leadership :: mfgsinc.com</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="robots" content="noindex"/>
+    <meta name="generator" content="concrete5 - 8.5.2"/>
+    <link rel="canonical" href="https://www.mfgsinc.com/leadership">
+    <link rel="stylesheet" href="https://www.mfgsinc.com/packages/carahsoft_theme/themes/mfgs/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.mfgsinc.com/packages/carahsoft_theme/themes/mfgs/css/global.css" />
+    <script type="text/javascript">
+        var CCM_DISPATCHER_FILENAME = "/index.php";
+        var CCM_CID = 954;
+        var CCM_EDIT_MODE = false;
+        var CCM_ARRANGE_MODE = false;
+        var CCM_IMAGE_PATH = "/concrete/images";
+        var CCM_TOOLS_PATH = "/index.php/tools/required";
+        var CCM_APPLICATION_URL = "https://www.mfgsinc.com";
+        var CCM_REL = "";
+        var CCM_ACTIVE_LOCALE = "en_US";
+    </script>
+
+    <script type="text/javascript" src="https://www.mfgsinc.com/concrete/js/jquery.js?ccm_nocache=c2f810f838c393a212b03734e81cad1b159e6ccc"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="viewport" content="width=device-width">
+    <style type="text/css">
+        body {
+            background-size: cover;
+        }
+        
+        .gray {
+            color: #6b7c94;
+        }
+        
+        /* Social Icons Formatting */
+        .icon {
+            justify-self: right;
+        }
+        
+        /* Leaders Section Overall Styling */
+        .leaders {
+            padding: 60px 0px;
+            background-color: #f2f7fb;
+        }
+        
+        /* Leaders Grid Layout */
+        .leaders-grid {
+            display: grid;
+            grid-template: auto auto auto / 300px 300px 300px;
+            grid-gap: 80px;
+            margin: 0px auto;
+            justify-content: center;
+        }
+        
+        /* Leaders Card Headshot Styling */
+        .leaders-headshot {
+            width: 200px;
+            height: 200px;
+            cursor: pointer;
+            transition: 0.5s ease;
+        }
+        
+        .leaders-headshot:hover {
+            opacity: 0.75;
+            transition: 0.5s ease;
+        }
+        
+        /* Leaders Card Name Styling */
+        .leaders-name {
+            margin-top: 30px;
+            color: #41c6fe;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+        
+        .leaders-name:hover {
+            color: #90defe;
+            transition: 0.2s ease;
+        }
+        
+        /* Leaders Card Title Styling */
+        .leaders-title {
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            font-size: 12px;
+        }
+        
+        .row1 {
+            height: 144px;
+        }
+        
+        .row2 {
+            height: 120px;
+        }
+        
+        .row3 {
+            height: 168px;
+        }
+        
+        .row3#hellman {
+            height: 150px;
+        }
+        
+        /* Shifts specified elements 10 pixels left in Leaders Card when
+        applied */
+        .padding {
+            margin-left: 10px;
+        }
+        
+        /* Top Level Title Formatting */
+        .page-title {
+            color: #fff;
+            padding: 40px 0;
+        }
+        
+        .page-title h1 {
+            font-weight: 400;
+        }
+        
+        .page-title p {
+            color: #fff;
+            max-width: 700px;
+            line-height: 20px;
+            font-size: 20px;
+        }
+        
+        /* Read More Section of Leaders Card Formatting */
+        .read-more-cta {
+            color: #0079ee;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        
+        .read-more-cta:hover {
+            color: #76bcff;
+            transition: 0.2s;
+        }
+        
+        .read-more-grid {
+            display: grid;
+            grid-template: auto / 76% 12% 12%;
+        }
+        
+        .twitter-icon {
+            visibility: hidden;
+        }
+        
+        .twitter-popup-icon {
+            display: none;
+        }
+        
+        /* Popup Bio Styling */
+        .bio {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        
+        /* Popup Bio Content/Box */
+        .bio-content {
+          background-color: #fefefe;
+          margin: 15% auto; /* 15% from the top and centered */
+          padding: 30px;
+          border: 1px solid #888;
+          width: 80%; /* Could be more or less, depending on screen size */
+        }
+        
+        /* Popup Bio Grid Layout for Headshot vs. Text */
+        .bio-grid {
+            display: grid;
+            grid-template: auto auto / 200px 1fr 35px;
+            justify-content: center;
+            grid-auto-flow: column;
+            grid-column-gap: 30px;
+        }
+        
+        /* Popup Bio Headshot Styling */
+        .bio-headshot {
+            margin-top: 30px;
+        }
+        
+        /* Popup Bio Name Styling */
+        .bio-name {
+            margin-top: 30px;
+            color: #41c6fe;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        
+        /* Popup Bio Social Icons Styling */
+        .bio-social {
+            display: grid;
+            grid-template: auto / auto auto;
+            justify-content: center;
+        }
+        
+        .bio-social img {
+            display: inline-block;
+        }
+        
+        /* Popup Bio Text Grid Section Specification */
+        .bio-text {
+            grid-row: 1 / span 2;
+        }
+        
+        /* Popup Bio Title Formatting */
+        .bio-title {
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            font-size: 12px;
+        }
+        
+        /* Popup Bio Close Button */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.2s ease;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            transition: 0.2s ease;
+            cursor: pointer;
+        }
+    
+        /* Dropdown Bio Section */
+        .dropdown-leader {
+            display: none;
+            width: 95%;
+            transition: 1s;
+        }
+        
+        #twitter-display {
+            visibility: visible;
+        }
+
+    @media only screen and (max-width: 1100px) {
+        .leaders-grid {
+            grid-template: repeat(5, auto) / 300px 300px;
+        }
+        
+        .row-med-1 {
+            height: 120px;
+        }
+        
+        .row-med-2 {
+            height: 144px;
+        }
+        
+        .row-med-3 {
+            height: 120px;
+        }
+        
+        .row-med-4#hellman {
+            height: 120px;
+        }
+        
+        .row-med-4 {
+            height: 138px;
+        }
+        
+        .row-med-5 {
+            height: auto;
+        }
+    }
+    
+    @media only screen and (max-width: 850px) {
+        .bio-content {
+            width: 90%;
+        }
+    }
+    
+    @media only screen and (max-width: 720px) {
+        .bio-content {
+            padding: 15px;
+            width: 95%;
+        }
+        
+        .bio-grid {
+            grid-column-gap: 15px;
+        }
+        
+        .leaders-grid {
+            grid-template: repeat(9, auto) / 300px;
+        }
+        
+        .row-med-1 {
+            height: auto;
+        }
+        
+        .row-med-2 {
+            height: auto;
+        }
+        
+        .row-med-3 {
+            height: auto;
+        }
+        
+        .row-med-4#hellman {
+            height: auto;
+        }
+        
+        .row-med-4 {
+            height: auto;
+        }
+    }
+    </style>
+</head>
+
+<body>
+  <div class="ccm-page page-type-page page-template-full">
+
+<section class="site-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="site-header__wrapper">
+          <p class="site-header__info"><a href="tel:8446347462">844-MFGSINC</a></p>
+          <ul class="site-header__social-links">
+            <li>
+              <a href="https://www.facebook.com/mfgsinc">
+                <img height="23" width="23" src="https://www.mfgsinc.com/packages/carahsoft_theme/themes/mfgs/img/facebook.svg">
+                <span class="sr-only">Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/mfgsinc">
+                <img height="22" width="22" src="https://www.mfgsinc.com/packages/carahsoft_theme/themes/mfgs/img/twitter.svg">
+                <span class="sr-only">Twitter</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/mfgs-inc">
+                <img height="22" width="22" src="https://www.mfgsinc.com/packages/carahsoft_theme/themes/mfgs/img/linkedin.svg">
+                <span class="sr-only">LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <div class="header-search__nav">
+                  
+
+    <form action="https://www.mfgsinc.com/search-results" method="get" class="ccm-search-block-form"><input name="search_paths[]" type="hidden" value="" /><input name="query" type="text" value="" class="ccm-search-block-text" /> <input name="submit" type="submit" value="Search" class="btn btn-default ccm-search-block-submit" /></form>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="primary-navigation" id="primary-navigation">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">
+        <img src="https://www.mfgsinc.com/packages/carahsoft_theme/themes/mfgs/img/mfgs-logo.png" alt="MFGS logo">
+        <span class="sr-only">MFGS</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active one">
+            <a class="nav-link" href="https://www.mfgsinc.com/index.php" target="_self">Home</a>
+          </li>
+          <li class="nav-item one dropdown">
+            <a class="nav-link" href="https://www.mfgsinc.com/solutions" target="_self">Solutions</a>
+            <div class="dropdown-content">
+              <a href="https://www.mfgsinc.com/solutions/hybrid-it-management">Hybrid IT</a>
+              <a href="https://www.mfgsinc.com/solutions/enterprise-devsecops">DevSecOps</a>
+              <a href="https://www.mfgsinc.com/solutions/security">Security & Risk</a>
+              <a href="https://www.mfgsinc.com/solutions/predictive-analytics">Predictive Analytics</a>
+            </div>
+          </li>
+          <li class="nav-item one dropdown">
+            <a class="nav-link" href="https://www.mfgsinc.com/about-us" target="_self">About Us</a>
+            <div class="dropdown-content">
+              <a href="https://www.mfgsinc.com/leadership">Leadership</a>
+              <a href="https://www.mfgsinc.com/careers">Careers</a>
+            </div>
+          </li>
+          <li class="nav-item one">
+            <a class="nav-link" href="https://www.mfgsinc.com/upcoming-events" target="_self">Upcoming Events</a>
+          </li>
+          <li class="nav-item"> 
+            <a class="nav-link btn btn-secondary" href="https://www.mfgsinc.com/contact-us">Contact Us</a> 
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>    
+
+<!-- Content that Stephen created -->
+
+<!-- Page Title and Intro Text -->
+<section class="page-title">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="section-title">Leadership</h1>
+
+                <p>Driven to defend and support the Mission</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Leaders Section -->
+<section class="leaders">
+    <!-- Leaders Grid - what displays when page initially loads -->
+    <div class="leaders-grid">
+    
+        <!-- Leader 1: Robert Makheja -->
+        <div class="leaders-card">
+            <!-- Headshot -->
+            <img src="https://static.mfgsinc.com/concrete/files/5715/8930/0426/Robert-Makheja200.png"
+            class="leaders-headshot padding popup popup1" alt="Robert Makheja headshot">
+            <!-- Name -->
+            <div class="leaders-name padding popup popup1">
+                Robert Makheja
+            </div>
+            <!-- Title -->
+            <div class="leaders-title padding gray">
+                President
+            </div>
+            <!-- Bio Summary -->
+            <div class="leaders-summary padding gray row1 row-med-1" 
+            id="makheja-summary-text" style="display: block;">
+                Robert J. Makheja is a visionary leader and successful
+                transformational entrepreneur whose experience spans across
+                numerous industry endeavors.
+            </div>
+            <!-- Dropdown that displays on mobile sizes (599 pixels and below) -->
+            <div id="dropdown1" class="dropdown-leader" style="display: none;">
+                <p>Robert J. Makheja is a visionary leader and successful
+                transformational entrepreneur whose experience spans
+                across numerous industry endeavors, as well as being a
+                leader in successful mergers and acquisitions among the
+                largest Fortune 50 companies. He is highly recognized by
+                the industry for leading large teams to solve complex
+                customer problems, integrating large corporations and
+                consistently exceeding business results.
+                </p>
+                <p>Recently, Makheja was a critical part in leading the
+                merger and integration of HPE Software with Micro Focus
+                International (IPO NYSE MFGP Sept. 2017, LSE MFGP.L) for
+                $8.8B, to become the seventh largest pure play software
+                company globally. In 2018, he helped to build and became
+                the President of MFGS, Inc., a U.S.-based and operated
+                private firm, purpose-built, government compliant, and
+                customer-centric enterprise software company providing
+                end-to-end Micro Focus solutions that help U.S. Federal
+                Government agencies solve mission-critical IT challenges.
+                </p>
+                <p>Makheja was the co-founder of the private equity
+                firm, RJM Capital, a leading investment firm that owns
+                and manages multiple asset classes, including
+                infrastructure, technology, biosciences, real estate
+                and credit. He is also a Managing Partner at RJM and
+                Associates, a premier legal advisory firm for business
+                and technology. Robert and his wife remain committed to
+                philanthropic giving, activities, and mentoring
+                programs globally through their NEXTGEN charitable
+                organization.
+                </p>
+                <p>Early in his career, Makheja led in growing Peregrine
+                Systems (NASD: PRGN), an enterprise software company
+                based in California, and then was an integral part in
+                the sale of the company to Hewlett-Packard (NYSE: HPQ)
+                for $425 million. Prior to that, he was Vice President
+                at Oracle Corporation (NYSE: ORCL) where he was
+                recognized for both his stellar performance and ethical
+                standards. Makheja has held other leadership positions
+                at IBM, and Texas Instruments.
+                </p>
+                <p>Makheja earned a Bachelor of Science (B.S.) in
+                Engineering from The George Washington University. He
+                later went on to graduate with a Doctorate of Law (J.D.)
+                and a Master of Business Administration (MBA) as well as
+                other advance education from Harvard Business School.
+                </p>
+            </div>
+            <!-- Dividing Line -->
+            <hr>
+            <!-- Read More Link & Social Icons Section -->
+            <div class="read-more-grid padding">
+                <!-- Read More "Link" -->
+                <div class="read-more">
+                    <span id="read-more-cta-1" class="read-more-cta popup popup1">
+                    Read More +</span>
+                </div>
+                <!-- Twitter Icon -->
+                <div class="twitter-icon" id="twitter-display">
+                    <!-- Update with Twitter URL here -->
+                    <a href="https://twitter.com/RobertJMakheja" target="_blank">
+                        <img src="https://static.mfgsinc.com/concrete/files/9615/8654/3737/Twitter_Icon.png"
+                        class="icon" alt="Makheja Twitter icon">
+                    </a>
+                </div>
+                <!-- LinkedIn Icon -->
+                <div class="linkedin-icon">
+                    <!-- Update with LinkedIn URL here -->
+                    <a href="https://www.linkedin.com/in/robert-j-makheja/" target="_blank">
+                        <img src="https://static.mfgsinc.com/concrete/files/1815/8654/3728/LinkedIn_Icon.png"
+                        class="icon" alt="Makheja LinkedIn icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Leader 2: Jim Rittinger -->
+        <div class="leaders-card">
+            <!-- Headshot -->
+            <img src="https://static.mfgsinc.com/concrete/files/5615/8930/0408/Jim-Rittinger200.png"
+            class="leaders-headshot padding popup popup2" alt="Jim Rittinger headshot">
+            <div class="leaders-name padding popup popup2">
+                Jim Rittinger
+            </div>
+            <div class="leaders-title padding gray">
+                Head of Legal & Compliance
+            </div>
+            <div class="leaders-summary padding gray row1 row-med-1"
+            id="rittinger-summary-text" style="display: block;">
+                Jim Rittinger oversees the company’s Legal, Contracts, and
+                Compliance Departments and serves on the company’s Governance
+                Committee.
+            </div>
+            <!-- Dropdown that displays on mobile sizes (599 pixels and below) -->
+            <div id="dropdown2" class="dropdown-leader" style="display: none;">
+                <p>Jim Rittinger oversees the company’s Legal, Contracts, and
+                Compliance Departments and serves on the company’s Governance
+                Committee.
+                </p>
+                <p>Prior to assuming his role at MFGS, Inc., Rittinger was the
+                Chief Legal Officer, Director and Corporate Secretary at Micro
+                Focus Government Solutions. Rittinger also served as Acting
+                President for the purpose of concluding the sale and transfer
+                of Micro Focus Government Solutions’ secure assets and personnel
+                to MFGS, Inc.
+                </p>
+                <p>Rittinger came to Micro Focus from Hewlett Packard Enterprise 
+                (HPE), where he was a Vice President and Associate General
+                Counsel responsible for managing the Legal and Contracts team
+                supporting HPE’s multi-billion dollar U.S. Public Sector
+                Enterprise Hardware and Software businesses. Rittinger had the
+                same role at Hewlett-Packard Company (HP) prior to that company’s
+                separation into Hewlett Packard, Inc. (HPI) and HPE. In his
+                roles at HP and HPE, Rittinger was the legal leader for the U.S.
+                public sector portions of HP’s separation and HPE’s spin-merge
+                of its software business with MFI, including responsibility for
+                obtaining requisite national security approvals, establishing
+                the necessary contracting entities required by the NISPOM and
+                other applicable laws and regulations, preparing the novation
+                packages for all impacted contracts and partnering with
+                customers to ensure timely government approval of the novations,
+                designing the Legal, Contracts, Compliance and Security
+                Departments and assigning personnel to the respective entities.
+                </p>
+                <p>Prior to his work at HP and HPE, Rittinger was the Managing
+                Legal Director and Corporate Secretary for Dell Services
+                Federal Government, Inc. and Dell Federal, LLP, the
+                multi-billion dollar federal contracting subsidiaries of Dell,
+                Inc. Rittinger came to Dell in the course of the sale of Perot
+                Systems, Inc., where Rittinger served as the General Counsel
+                and Corporate Secretary for Perot Systems Government Services,
+                Inc., a billion dollar SSA-excluded subsidiary of Perot Systems,
+                Inc., providing professional, consulting and IT services to the
+                federal government.
+                </p>
+                <p>Prior to his in-house experience, Rittinger worked in the
+                New York offices of several prominent AM Law 100 firms, most
+                notably with Quinn Emanuel LLP. He also served as a law clerk to
+                the Honorable Charles L. Brieant, U.S.D.J., Chief Judge of the
+                United States District Court for the Southern District of New
+                York, and the Honorable Mary Ellen Coster Williams of the
+                United States Court of Federal Claims.
+                </p>
+                <p>Rittinger graduated Boston College with a Bachelor of Arts in
+                History (Magna cum Laude) and the Fordham University School of
+                Law where he obtained his Juris Doctor. He resides in Arlington,
+                Virginia with his wife and three children.
+                </p>
+            </div>
+            <hr>
+            <div class="read-more-grid padding">
+                <div class="read-more">
+                    <span id="read-more-cta-2" class="read-more-cta popup popup2">
+                    Read More +</span>
+                </div>
+                <div class="twitter-icon">
+                    <a href="#" target="_blank">
+                        <img src="https://static.mfgsinc.com/concrete/files/9615/8654/3737/Twitter_Icon.png"
+                        class="icon" alt="Makheja Twitter icon">
+                    </a>
+                </div>
+                <div class="linkedin-icon">
+                    <a href="https://www.linkedin.com/in/james-rittinger-1a117419/" target="_blank">
+                        <img src="https://static.mfgsinc.com/concrete/files/1815/8654/3728/LinkedIn_Icon.png"
+                        class="icon" alt="Makheja LinkedIn icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Leader 3: Tyler Price -->
+        <div class="leaders-card">
+            <!-- Headshot -->
+            <img src="https://static.mfgsinc.com/concrete/files/2415/8930/0432/Tyler-Price200.png"
+            class="leaders-headshot padding popup popup3" alt="Tyler Price headshot">
+            <!-- Name -->
+            <div class="leaders-name padding popup popup3">
+                Tyler Price
+            </div>
+            <div class="leaders-title padding gray">
+                Head of Finance & Governance
+            </div>
+            <div class="leaders-summary padding gray row1 row-med-2"
+            id="price-summary-text" style="display: block;">
+                Tyler Price oversees accounting, financial processes, business
+                support, financial planning and analysis, reporting, payroll, and
+                company cash flow. He also chairs the company’s Governance Committee. 
+            </div>
+            <div id="dropdown3" class="dropdown-leader" style="display: none;">
+                <p>Tyler Price oversees accounting, financial processes,
+                business support, financial planning and analysis, reporting,
+                payroll, and company cash flow. He also chairs the company’s
+                Governance Committee.
+                </p>
+                <p>Price has been an integral leader of multiple integrations
+                that ultimately led to the creation of MFGS, Inc. These
+                integrations have allowed companies to increase the size and
+                scope of business focused on providing enterprise software
+                and support to the U.S. federal government. Price supported
+                the hiring of  key personnel, developed core business processes,
+                and established dashboards and KPIs to drive business results
+                and profitability while optimizing cash flow.
+                </p>
+                <p>Price has over 20 years of experience building and leading
+                finance teams in global companies with complex business models,
+                mergers, and acquisitions, integrating and divesting companies, and establishing
+                best-in-class practices through robust analysis,
+                strategic planning, and process development and optimization. 
+                </p>
+                <p>Prior to joining MFGS, Inc., Price was the Chief Financial
+                Officer (CFO) and a founding executive for  Micro Focus
+                Government Solutions. Price led divestiture and integration
+                activities stemming from the spin-out of Hewlett Packard
+                Enterprise’s (HPE) Software Division and was on the Board of
+                Director’s Audit & Compensation Committees at Micro Focus. As
+                CFO for the Americas Software region at HPE, Price oversaw 
+                annual revenues of over $2 billion. He was also the Sr. Director
+                of Finance for the Big Data Software & SaaS business, which
+                became the top performing software business in the company, and
+                the Sr. Finance Manager of the Enterprise Security Software
+                Division, where he led the successful integration of several
+                company acquisitions. Price also oversaw finance for the
+                Enterprise Services Division where he helped build a services
+                business focused on delivering solutions from numerous low-cost
+                locations around the world. 
+                </p>
+                <p>Price began his career at Hewlett-Packard Co. as a Sr.
+                Financial Analyst supporting new product introductions in the
+                Storage Solutions Division.
+                </p>
+                <p>Price earned a Bachelor of Arts in Economics and a Master of
+                Business Administration in Finance from Brigham Young University.
+                He also earned a Certificate in Leadership & Innovation from
+                Stanford University. He resides in California with his wife and
+                their five children.
+                </p>
+            </div>
+            <hr>
+            <div class="read-more-grid padding">
+                <div class="read-more">
+                    <span id="read-more-cta-3" class="read-more-cta popup popup3">
+                    Read More +</span>
+                </div>
+                <div class="twitter-icon">
+                    <a href="#" target="_blank">
+                        <img src="https://static.mfgsinc.com/concrete/files/9615/8654/3737/Twitter_Icon.png"
+                        class="icon" alt="Price Twitter icon">
+                    </a>
+                </div>
+                <div class="linkedin-icon">
+                    <a href="https://www.linkedin.com/in/tyleraprice/" target="_blank">
+                        <img src="https://static.mfgsinc.com/concrete/files/1815/8654/3728/LinkedIn_Icon.png"
+                        class="icon" alt="Price LinkedIn icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Leader 4: Kathy Buyna -->
+        <div class="leaders-card">
+            <img src="https://static.mfgsinc.com/concrete/files/4815/8930/0414/Kathy-Buyna200.png"
+            class="leaders-headshot padding popup popup4" alt="Kathy Buyna headshot">
+            <div class="leaders-name padding popup popup4">
+                Kathy Buyna
+            </div>
+            <div class="leaders-title padding gray">
+                Head of Support Renewals
+            </div>
+            <div class="leaders-summary padding gray row2 row-med-2"
+            id="buyna-summary-text" style="display: block;">
+                Kathy Buyna oversees the renewal business including the support
+                renewals and the renewal operations organizations.
+            </div>
+            <div id="dropdown4" class="dropdown-leader" style="display: none;">
+                <p>Kathy Buyna oversees MFGS, Inc.’s renewal business including
+                the support renewals and the renewal operations organizations.
+                Buyna was an essential leader and organizer of the creation of
+                MFGS, Inc. and has more than 20 years of experience in the
+                technology industry, including leadership positions at
+                Hewlett-Packard and Micro Focus Government Solutions.
+                </p>
+                <p>She resides in Wake Forest, North Carolina with her family.</p>
+            </div>
+            <hr>
+            <div class="read-more-grid padding">
+                <div class="read-more">
+                    <span id="read-more-cta-4" class="read-more-cta popup popup4">
+                    Read More +</span>
+                </div>
+                <div class="twitter-icon">
+                    <a href="#" target="_blank">
+                        <img src="https://static.mfgsinc.com/concrete/files/9615/8654/3737/Twitter_Icon.png"
+                        class="icon" alt="Makheja Twitter icon">
+                    </a>
+                </div>
+                <div class="linkedin-icon">
+                    <a href="https://www.linkedin.com/in/kathy-buyna-aa9bb37/" target="_blank">
+                        <img src="https://static.mfgsinc.com/concrete/files/1815/8654/3728/LinkedIn_Icon.png"
+                        class="icon" alt="Makheja LinkedIn icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Leader 5: Bill Bacci -->
+        <div class="leaders-card">
+            <img src="https://static.mfgsinc.com/concrete/files/3815/8930/0383/Bill-Bacci200.png"
+            class="leaders-headshot padding popup popup5" alt="Bill Bacci headshot">
+            <div class="leaders-name padding popup popup5">
+                Bill Bacci
+            </div>
+            <div class="leaders-title padding gray">
+                Head of Sales and Engineering
+            </div>
+            <div class="leaders-summary padding gray row2 row-med-3"
+            id="bacci-summary-text" style="display: block;">
+                Bill Bacci oversees new license sales, first year support, and
+                technical sales engineering for all government secure accounts.
+            </div>
+            <div id="dropdown5" class="dropdown-leader" style="display: none;">
+                <p>Bill Bacci oversees new license sales, first year support,
+                and technical sales engineering for all government secure
+                accounts. He has over 30 years of experience leading technical
+                and sales teams in global companies with complex business
+                models. Bacci has been an integral leader in many different
+                roles across Hewlett Packard, Micro Focus, and MFGS, Inc.
+                He currently supports all license revenue, hires key personnel,
+                and provides integrated solutions for customers.
+                </p>
+                <p>Prior to joining MFGS, Inc., Bacci served as the DOD and
+                Intel Sales Manager for Micro Focus Government Solutions and
+                helped lead the merge of the entire secure sales team into the
+                company. 
+                </p>
+                <p>Bacci also previously served as the Sales Vice President for
+                Hewlett Packard and the Chief Technology Officer for Hewlett
+                Packard’s Government Division, helping to double sales through
+                technology evangelism and introducing new technology into the
+                government sector. He also ran the professional services team
+                where he successfully developed the introduction of commercial
+                best practices into the federal space.
+                </p>
+                <p>Bacci began his career at Citicorp Consumer banking as Vice
+                President for global communications, leading projects that
+                rolled out global banking networks, application modernizations,
+                and structuring.  
+                </p>
+                <p>Bacci earned a Bachelor of Science from Iona College and a
+                Master of Business Administration in Finance from Marymount
+                University. He also earned a CISSP and ITIL Master. He resides
+                in Virginia with his wife and their three children.
+                </p>
+            </div>
+            <hr>
+            <div class="read-more-grid padding">
+                <div class="read-more">
+                    <span id="read-more-cta-5" class="read-more-cta popup popup5">
+                    Read More +</span>
+                </div>
+                <div class="twitter-icon">
+                    <a href="#" target="_blank">
+                        <img src="https://static.mfgsinc.com/concrete/files/9615/8654/3737/Twitter_Icon.png"
+                        class="icon" alt="Bacci Twitter icon">
+                    </a>
+                </div>
+                <div class="linkedin-icon">
+                    <a href="https://www.linkedin.com/in/william-bacci-a6b6272/" target="_blank">
+                        <img src="https://static.mfgsinc.com/concrete/files/1815/8654/3728/LinkedIn_Icon.png"
+                        class="icon" alt="Bacci LinkedIn icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Leader 6: Christine Hand -->
+        <div class="leaders-card">
+            <img src="https://static.mfgsinc.com/concrete/files/1315/8930/0389/Christine-Hand200.png"
+            class="leaders-headshot padding popup popup6" alt="Christine Hand headshot">
+            <div class="leaders-name padding popup popup6">
+                Christine Hand
+            </div>
+            <div class="leaders-title padding gray">
+                Head of Marketing
+            </div>
+            <div class="leaders-summary padding gray row2 row-med-3"
+            id="hand-summary-text" style="display: block;">
+                Christine Hand is responsible for leading all digital, social,
+                corporate, and field marketing programs supporting MFGS, Inc.’s
+                go-to-market strategy and execution.
+            </div>
+            <div id="dropdown6" class="dropdown-leader" style="display: none;">
+                <p>Christine Hand is responsible for leading all digital,
+                social, corporate, and field marketing programs supporting MFGS,
+                Inc.’s go-to-market strategy and execution. Coming from a
+                military family she is passionate about how technology supports
+                and enables the mission of the U.S. Federal Government. 
+                </p>
+                <p>Hand was an essential leader in the creation of MFGS, Inc.,
+                creating and building the company brand and supporting the
+                overall organizational design of the company. She has been a
+                part of the integration management team and customer experience
+                throughout the transition.
+                </p>
+                <p>Hand’s background includes over 10 years of expertise in
+                public sector marketing. Prior to joining MFGS, Inc., she was a
+                part of the integration management team during the spin-merge of
+                HPE Software and Micro Focus International (IPO NYSE MFGP, Sept
+                2017) and served as marketing director for the U.S. Public Sector
+                team at Micro Focus Government Solutions. Previously, Hand held
+                positions as the marketing director for the software field
+                marketing team at Hewlett Packard Enterprise as well as other
+                marketing positions with Hewlett Packard focusing on the public
+                sector as well as commercial markets. 
+                </p>
+                <p>Hand is a graduate of Minot State University, where she
+                double-majored in business management and international
+                business. She resides in Northern Virginia with her husband and
+                daughter.
+                </p>
+            </div>
+            <hr>
+            <div class="read-more-grid padding">
+                <div class="read-more">
+                    <span id="read-more-cta-6" class="read-more-cta popup popup6">
+                    Read More +</span>
+                </div>
+                <div class="twitter-icon">
+                    <a href="#" target="_blank">
+                        <img src="https://static.mfgsinc.com/concrete/files/9615/8654/3737/Twitter_Icon.png"
+                        class="icon" alt="Makheja Twitter icon">
+                    </a>
+                </div>
+                <div class="linkedin-icon">
+                    <a href="https://www.linkedin.com/in/christine-hand/" target="_blank">
+                        <img src="https://static.mfgsinc.com/concrete/files/1815/8654/3728/LinkedIn_Icon.png"
+                        class="icon" alt="Makheja LinkedIn icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Leader 7: Liz Van Hazinga -->
+        <div class="leaders-card">
+            <img src="https://static.mfgsinc.com/concrete/files/3415/8930/0420/Liz-Van-Hazinga200.png"
+            class="leaders-headshot padding popup popup7" alt="Liz Van Hazinga headshot">
+            <div class="leaders-name padding popup popup7">
+                Liz Van Hazinga
+            </div>
+            <div class="leaders-title padding gray">
+                Head of Operations
+            </div>
+            <div class="leaders-summary padding gray row3 row-med-4"
+            id="hazinga-summary-text" style="display: block;">
+                Elizabeth Van Hazinga oversees all operational activities,
+                including performance management, business planning and analysis,
+                forecasting, and process optimization. She also serves on the company's Governance Committee.
+            </div>
+            <div id="dropdown7" class="dropdown-leader" style="display: none;">
+                <p>Elizabeth Van Hazinga oversees all operational activities,
+                including performance management, business planning and
+                analysis, forecasting, and process optimization. She is also a
+                member of the company’s Governance Committee. Van Hazinga brings
+                20 years of operations and finance experience to MFGS, Inc. She
+                is a proven, trusted advisor and leader in the development and
+                implementation of operational strategy, with experience across
+                several major mergers and acquisitions.
+                </p>
+                <p>Van Hazinga was an instrumental leader in the creation of
+                MFGS, Inc., serving as project manager and overseeing the
+                organizational design and operating structure used during the
+                spinout, launch, and integration phases of the company across
+                2018 and 2019. Following the creation of the company, she
+                oversaw the development of standardized processes and
+                performance reporting across all lines of business and continues
+                to serve as a key member of the organization’s governance
+                committee. In April of 2019, Van Hazinga was recognized with
+                the President’s Star Eagle Award for her leadership.
+                </p>
+                <p>Prior to joining MFGS, Inc., Van Hazinga served as Operations
+                Manager for the Americas during the merger of Hewlett Packard
+                Enterprise (HPE) and Micro Focus, where she designed and
+                implemented standard forecasting and planning processes and
+                tools across multiple business units and geographies.
+                Additionally, she spent many years as a finance manager
+                supporting the Americas Network, Alliances, and Strategic
+                Account business segments at Hewlett Packard in devising sales
+                coverage strategies, minimizing field selling costs, and
+                maximizing quarterly revenue.
+                </p>
+                <p>Van Hazinga holds a Bachelor in Business Administration from
+                Assumption College and a Master of Business Administration from
+                the University of Massachusetts. She lives in central
+                Massachusetts with her husband and their three children.
+                </p>
+            </div>
+            <hr>
+            <div class="read-more-grid padding popup popup7">
+                <div class="read-more">
+                    <span id="read-more-cta-7" class="read-more-cta">
+                    Read More +</span>
+                </div>
+                <div class="twitter-icon">
+                    <a href="#" target="_blank">
+                        <img src="https://static.mfgsinc.com/concrete/files/9615/8654/3737/Twitter_Icon.png"
+                        class="icon" alt="Makheja Twitter icon">
+                    </a>
+                </div>
+                <div class="linkedin-icon">
+                    <a href="https://www.linkedin.com/in/elizabethvanhazinga/" target="_blank">
+                        <img src="https://static.mfgsinc.com/concrete/files/1815/8654/3728/LinkedIn_Icon.png"
+                        class="icon" alt="Hazinga LinkedIn icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Leader 8: Elizabeth Hellman -->
+        <div class="leaders-card">
+            <img src="https://static.mfgsinc.com/concrete/files/5015/8930/0401/Elizabeth-Hellman200.png"
+            class="leaders-headshot padding popup popup8" alt="Elizabeth Hellman headshot">
+            <div class="leaders-name padding popup popup8">
+                Elizabeth Hellman
+            </div>
+            <div class="leaders-title padding gray">
+                Head of Corporate Communications and Public Relations
+            </div>
+            <div class="leaders-summary padding gray row3 row-med-4" 
+            id="hellman-summary-text" style="display: block;">
+                Elizabeth Hellman oversees all corporate relations for MFGS, Inc.,
+                including internal communications, PR, employee engagement and
+                personnel matters.
+            </div>
+            <div id="dropdown8" class="dropdown-leader" style="display: none;">
+                <p>Elizabeth Hellman oversees all corporate relations for MFGS,
+                Inc., including internal communications, PR, employee engagement
+                and personnel matters. She has nearly 10 years of experience
+                managing corporate functions and improving employee experience. 
+                </p>
+                <p>Hellman was an integral leader during the numerous merge
+                phases of MFGS, Inc., being part of the integration management
+                team and leading employee onboarding and engagement, as well as
+                operational processes and planning. Hellman was instrumental in
+                building the cultural of MFGS, Inc. and laying groundwork for
+                the company’s philanthropic efforts. 
+                </p>
+                <p>Prior to joining MFGS, Inc., Hellman oversaw branding and
+                content creation for the marketing team at Micro Focus
+                Government Solutions. She led re-branding efforts of company
+                materials following the spin-merge of Hewlett Packard Enterprise
+                to Micro Focus, and was responsible for the creation of all
+                marketing content for the Government space. She also held project
+                management positions at USA TODAY where she led mobile
+                application product development and audience acquisition
+                efforts. Before that role, Hellman served as the marketing team
+                lead on the Hewlett Packard Enterprise account at Carahsoft
+                Technology Corporation. 
+                </p>
+                <p>Hellman holds a Bachelor of Arts in Public Relations and
+                Advertising from Penn State University. She resides in
+                Fairfax, Virginia. 
+                </p>
+            </div>
+            <hr>
+            <div class="read-more-grid padding">
+                <div class="read-more">
+                    <span id="read-more-cta-8" class="read-more-cta popup popup8">
+                    Read More +</span>
+                </div>
+                <div class="twitter-icon">
+                    <a href="#" target="_blank">
+                        <img src="https://static.mfgsinc.com/concrete/files/9615/8654/3737/Twitter_Icon.png"
+                        class="icon" alt="Makheja Twitter icon">
+                    </a>
+                </div>
+                <div class="linkedin-icon">
+                    <a href="https://www.linkedin.com/in/elizabethhellman1/" target="_blank">
+                        <img src="https://static.mfgsinc.com/concrete/files/1815/8654/3728/LinkedIn_Icon.png"
+                        class="icon" alt="Makheja LinkedIn icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Leader 9: Duane Pfister -->
+        <div class="leaders-card">
+            <img src="https://static.mfgsinc.com/concrete/files/2115/8930/0395/Duane-Pfister200.png"
+            class="leaders-headshot padding popup popup9" alt="Duane Pfister headshot">
+            <div class="leaders-name padding popup popup9">
+                Duane Pfister
+            </div>
+            <div class="leaders-title padding gray">
+                Head of Security
+            </div>
+            <div class="leaders-summary padding gray row3 row-med-5"
+            id="pfister-summary-text" style="display: block;">
+                Duane Pfister is responsible for overseeing all company
+                facilities and personnel security measures, including all
+                security details of classified programs supporting the 
+                Intelligence Community (IC) and Department of Defense (DOD).
+            </div>
+            <div id="dropdown9" class="dropdown-leader" style="display: none;">
+                <p>Duane Pfister is responsible for overseeing all company
+                facilities and personnel security measures, including all
+                security details of classified programs supporting the
+                Intelligence Community (IC) and Department of Defense (DOD). He
+                also supports the processing of clearances for multiple agencies
+                and ensures company adherence to Federal Security regulations,
+                policies, and procedures.
+                </p>
+                <p>Pfister was instrumental in supporting the stand-up and
+                build-out of the MFGS, Inc. facility, as well as working with
+                multiple government customers and MFGS, Inc. Contracts
+                Department to assist the transfer of classified contracts and
+                employee clearances.
+                </p>
+                <p>Pfister has nearly 25 years of government contracting
+                experience, working with companies like Lockheed Martin,
+                ManTech, SpecTal, SIG, Triple, Canopy and Constellis Group.
+                Pfister has overseen security management, badging, physical
+                security, and program security.   
+                </p>
+                <p>He holds certifications in the following areas: Security
+                Specialist, Terrestrial COMSEC Management, Industrial Special
+                Security Administration, Adjudicator Course and a Facility
+                Security Officer Certification.
+                </p>
+                <p>Prior to his corporate career, Pfister served as a Security
+                Specialist in the United States Air Force. He attended Northern
+                Virginia Community College where he pursued a degree in Criminal
+                Justice. He currently lives in Virginia with his family and
+                enjoys hunting, fishing, and riding ATVs. 
+                </p>
+            </div>
+            <hr>
+            <div class="read-more-grid padding">
+                <div class="read-more">
+                    <span id="read-more-cta-9" class="read-more-cta popup popup9">
+                    Read More +</span>
+                </div>
+                <div class="twitter-icon">
+                    <a href="#" target="_blank">
+                        <img src="https://static.mfgsinc.com/concrete/files/9615/8654/3737/Twitter_Icon.png"
+                        class="icon" alt="Makheja Twitter icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Popup Bios Section -->
+<section>
+
+    <!-- Popup 1: Robert Makheja -->
+    <div id="popup1" class="bio">
+        <div class="bio-content">
+            <!-- Popup Window Content Layout Grid -->
+            <div class="bio-grid">
+                <!-- Popup Headshot (Left Column of Grid) -->
+                <div class="bio-headshot">
+                    <img src="https://static.mfgsinc.com/concrete/files/5715/8930/0426/Robert-Makheja200.png"
+                    alt="Robert Makheja headshot">
+                    <!-- Social Icons -->
+                    <div class="bio-social">
+                        <div>
+                            <!-- Update Twitter URL here -->
+                            <a href="https://twitter.com/RobertJMakheja" target="_blank">
+                                <img src="https://static.mfgsinc.com/concrete/files/9615/8654/3737/Twitter_Icon.png"
+                                class="icon" alt="Makheja Twitter icon">
+                            </a>
+                        </div>
+                        <div>
+                            <!-- Update LinkedIn URL here -->
+                            <a href="https://www.linkedin.com/in/robert-j-makheja/" target="_blank">
+                                <img src="https://static.mfgsinc.com/concrete/files/1815/8654/3728/LinkedIn_Icon.png"
+                                class="icon" alt="Makheja LinkedIn icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Popup Text (Right Column of Grid) -->
+                <div class="bio-text">
+                    <!-- Name -->
+                    <div class="bio-name">
+                        Robert Makheja
+                    </div>
+                    <!-- Title -->
+                    <div class="bio-title gray">
+                        President
+                    </div>
+                    <!-- Popup Bio Text -->
+                    <div class="bio-paragraphs gray">
+                        <p>Robert J. Makheja is a visionary leader and successful
+                        transformational entrepreneur whose experience spans
+                        across numerous industry endeavors, as well as being a
+                        leader in successful mergers and acquisitions among the
+                        largest Fortune 50 companies. He is highly recognized by
+                        the industry for leading large teams to solve complex
+                        customer problems, integrating large corporations and
+                        consistently exceeding business results.
+                        </p>
+                        <p>Recently, Makheja was a critical part in leading the
+                        merger and integration of HPE Software with Micro Focus
+                        International (IPO NYSE MFGP Sept. 2017, LSE MFGP.L) for
+                        $8.8B, to become the seventh largest pure play software
+                        company globally. In 2018, he helped to build and became
+                        the President of MFGS, Inc., a U.S.-based and operated
+                        private firm, purpose-built, government compliant, and
+                        customer-centric enterprise software company providing
+                        end-to-end Micro Focus solutions that help U.S. Federal
+                        Government agencies solve mission-critical IT challenges.
+                        </p>
+                        <p>Makheja was the co-founder of the private equity
+                        firm, RJM Capital, a leading investment firm that owns
+                        and manages multiple asset classes, including
+                        infrastructure, technology, biosciences, real estate
+                        and credit. He is also a Managing Partner at RJM and
+                        Associates, a premier legal advisory firm for business
+                        and technology. Robert and his wife remain committed to
+                        philanthropic giving, activities, and mentoring
+                        programs globally through their NEXTGEN charitable
+                        organization.
+                        </p>
+                        <p>Early in his career, Makheja led in growing Peregrine
+                        Systems (NASD: PRGN), an enterprise software company
+                        based in California, and then was an integral part in
+                        the sale of the company to Hewlett-Packard (NYSE: HPQ)
+                        for $425 million. Prior to that, he was Vice President
+                        at Oracle Corporation (NYSE: ORCL) where he was
+                        recognized for both his stellar performance and ethical
+                        standards. Makheja has held other leadership positions
+                        at IBM, and Texas Instruments.
+                        </p>
+                        <p>Makheja earned a Bachelor of Science (B.S.) in
+                        Engineering from The George Washington University. He
+                        later went on to graduate with a Doctorate of Law (J.D.)
+                        and a Master of Business Administration (MBA) as well as
+                        other advance education from Harvard Business School.
+                        </p>
+                    </div>
+                </div>
+                <!-- Close Button (X) -->
+                <div>
+                    <span class="close">&times;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Popup 2: Jim Rittinger -->
+    <div id="popup2" class="bio">
+        <div class="bio-content">
+            <!-- Popup Window Content Layout Grid -->
+            <div class="bio-grid">
+                <!-- Popup Headshot (Left Column of Grid) -->
+                <div class="bio-headshot">
+                    <img src="https://static.mfgsinc.com/concrete/files/5615/8930/0408/Jim-Rittinger200.png"
+                    alt="Jim Rittinger headshot">
+                    <!-- Social Icons -->
+                    <div class="bio-social">
+                        <div class="twitter-popup-icon">
+                            <!-- Update Twitter URL here -->
+                            <a href="#" target="_blank">
+                                <img src="https://static.mfgsinc.com/concrete/files/9615/8654/3737/Twitter_Icon.png"
+                                class="icon" alt="Makheja Twitter icon">
+                            </a>
+                        </div>
+                        <div>
+                            <!-- Update LinkedIn URL here -->
+                            <a href="https://www.linkedin.com/in/james-rittinger-1a117419/" target="_blank">
+                                <img src="https://static.mfgsinc.com/concrete/files/1815/8654/3728/LinkedIn_Icon.png"
+                                class="icon" alt="Makheja LinkedIn icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Popup Text (Right Column of Grid) -->
+                <div class="bio-text">
+                    <!-- Name -->
+                    <div class="bio-name">
+                        Jim Rittinger
+                    </div>
+                    <!-- Title -->
+                    <div class="bio-title gray">
+                        Head of Legal & Compliance
+                    </div>
+                    <!-- Popup Bio Text -->
+                    <div class="bio-paragraphs gray">
+                        <p>Jim Rittinger oversees the company’s Legal, Contracts, 
+                        and Compliance Departments and serves on the company’s Governance Committee.
+                        </p>
+                        <p>Prior to assuming his role at MFGS, Inc., Rittinger was the Chief Legal Officer, Director and Corporate Secretary at Micro Focus Government Solutions. Rittinger also served as Acting President for the purpose of concluding the sale and transfer of Micro Focus Government Solutions’ secure assets and personnel to MFGS, Inc.
+                        </p>
+                        <p>Rittinger came to Micro Focus from Hewlett Packard Enterprise  (HPE), where he was a Vice President and Associate General Counsel responsible for managing the Legal and Contracts team supporting HPE’s multi-billion dollar U.S. Public Sector Enterprise Hardware and Software businesses. Rittinger had the same role at Hewlett-Packard Company (HP) prior to that company’s separation into Hewlett Packard, Inc. (HPI) and HPE. In his roles at HP and HPE, Rittinger was the legal leader for the U.S. public sector portions of HP’s separation and HPE’s spin-merge of its software business with MFI, including responsibility for obtaining requisite national security approvals, establishing the necessary contracting entities required by the NISPOM and other applicable laws and regulations, preparing the novation packages for all impacted contracts and partnering with customers to ensure timely government approval of the novations, designing the Legal, Contracts, Compliance and Security Departments and assigning personnel to the respective entities.
+                        </p>
+                        <p>Prior to his work at HP and HPE, Rittinger was the Managing Legal Director and Corporate Secretary for Dell Services Federal Government, Inc. and Dell Federal, LLP, the multi-billion dollar federal contracting subsidiaries of Dell, Inc. Rittinger came to Dell in the course of the sale of Perot Systems, Inc., where Rittinger served as the General Counsel and Corporate Secretary for Perot Systems Government Services, Inc., a billion dollar SSA-excluded subsidiary of Perot Systems, Inc., providing professional, consulting and IT services to the federal government.
+                        </p>
+                        <p>Prior to his in-house experience, Rittinger worked in the New York offices of several prominent AM Law 100 firms, most notably with Quinn Emanuel LLP. He also served as a law clerk to the Honorable Charles L. Brieant, U.S.D.J., Chief Judge of the United States District Court for the Southern District of New York, and the Honorable Mary Ellen Coster Williams of the United States Court of Federal Claims.
+                        </p>
+                        <p>Rittinger graduated Boston College with a Bachelor of Arts in History (Magna cum Laude) and the Fordham University School of Law where he obtained his Juris Doctor. He resides in Arlington, Virginia with his wife and three children.</p>
+                    </div>
+                </div>
+                <!-- Close Button (X) -->
+                <div>
+                    <span class="close">&times;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Popup 3: Tyler Price -->
+    <div id="popup3" class="bio">
+        <div class="bio-content">
+            <!-- Popup Window Content Layout Grid -->
+            <div class="bio-grid">
+                <!-- Popup Headshot (Left Column of Grid) -->
+                <div class="bio-headshot">
+                    <img src="https://static.mfgsinc.com/concrete/files/2415/8930/0432/Tyler-Price200.png"
+                    alt="Tyler Price headshot">
+                    <!-- Social Icons -->
+                    <div class="bio-social">
+                        <div class="twitter-popup-icon">
+                            <!-- Update Twitter URL here -->
+                            <a href="#" target="_blank">
+                                <img src="https://static.mfgsinc.com/concrete/files/9615/8654/3737/Twitter_Icon.png"
+                                class="icon" alt="Makheja Twitter icon">
+                            </a>
+                        </div>
+                        <div>
+                            <!-- Update LinkedIn URL here -->
+                            <a href="https://www.linkedin.com/in/tyleraprice/" target="_blank">
+                                <img src="https://static.mfgsinc.com/concrete/files/1815/8654/3728/LinkedIn_Icon.png"
+                                class="icon" alt="Makheja LinkedIn icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Popup Text (Right Column of Grid) -->
+                <div class="bio-text">
+                    <!-- Name -->
+                    <div class="bio-name">
+                        Tyler Price
+                    </div>
+                    <!-- Title -->
+                    <div class="bio-title gray">
+                        Head of Finance & Governance
+                    </div>
+                    <!-- Popup Bio Text -->
+                    <div class="bio-paragraphs gray" id="price-bio">
+                        <p>Tyler Price oversees accounting, financial processes,
+                business support, financial planning and analysis, reporting,
+                payroll, and company cash flow. He also chairs the company’s
+                Governance Committee.
+                </p>
+                <p>Price has been an integral leader of multiple integrations
+                that ultimately led to the creation of MFGS, Inc. These
+                integrations have allowed companies to increase the size and
+                scope of business focused on providing enterprise software
+                and support to the U.S. federal government. Price supported
+                the hiring of  key personnel, developed core business processes,
+                and established dashboards and KPIs to drive business results
+                and profitability while optimizing cash flow.
+                </p>
+                <p>Price has over 20 years of experience building and leading
+                finance teams in global companies with complex business models,
+                mergers, and acquisitions, integrating and divesting companies, and establishing
+                best-in-class practices through robust analysis,
+                strategic planning, and process development and optimization. 
+                </p>
+                <p>Prior to joining MFGS, Inc., Price was the Chief Financial
+                Officer (CFO) and a founding executive for  Micro Focus
+                Government Solutions. Price led divestiture and integration
+                activities stemming from the spin-out of Hewlett Packard
+                Enterprise’s (HPE) Software Division and was on the Board of
+                Director’s Audit & Compensation Committees at Micro Focus. As
+                CFO for the Americas Software region at HPE, Price oversaw 
+                annual revenues of over $2 billion. He was also the Sr. Director
+                of Finance for the Big Data Software & SaaS business, which
+                became the top performing software business in the company, and
+                the Sr. Finance Manager of the Enterprise Security Software
+                Division, where he led the successful integration of several
+                company acquisitions. Price also oversaw finance for the
+                Enterprise Services Division where he helped build a services
+                business focused on delivering solutions from numerous low-cost
+                locations around the world. 
+                </p>
+                <p>Price began his career at Hewlett-Packard Co. as a Sr.
+                Financial Analyst supporting new product introductions in the
+                Storage Solutions Division.
+                </p>
+                <p>Price earned a Bachelor of Arts in Economics and a Master of
+                Business Administration in Finance from Brigham Young University.
+                He also earned a Certificate in Leadership & Innovation from
+                Stanford University. He resides in California with his wife and
+                their five children.
+                </p>
+                    </div>
+                </div>
+                <!-- Close Button (X) -->
+                <div>
+                    <span class="close">&times;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Popup 4: Kathy Buyna -->
+    <div id="popup4" class="bio">
+        <div class="bio-content">
+            <!-- Popup Window Content Layout Grid -->
+            <div class="bio-grid">
+                <!-- Popup Headshot (Left Column of Grid) -->
+                <div class="bio-headshot">
+                    <img src="https://static.mfgsinc.com/concrete/files/4815/8930/0414/Kathy-Buyna200.png"
+                    alt="Kathy Buyna headshot">
+                    <!-- Social Icons -->
+                    <div class="bio-social">
+                        <div class="twitter-popup-icon">
+                            <!-- Update Twitter URL here -->
+                            <a href="#" target="_blank">
+                                <img src="https://static.mfgsinc.com/concrete/files/9615/8654/3737/Twitter_Icon.png"
+                                class="icon" alt="Makheja Twitter icon">
+                            </a>
+                        </div>
+                        <div>
+                            <!-- Update LinkedIn URL here -->
+                            <a href="https://www.linkedin.com/in/kathy-buyna-aa9bb37/" target="_blank">
+                                <img src="https://static.mfgsinc.com/concrete/files/1815/8654/3728/LinkedIn_Icon.png"
+                                class="icon" alt="Makheja LinkedIn icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Popup Text (Right Column of Grid) -->
+                <div class="bio-text">
+                    <!-- Name -->
+                    <div class="bio-name">
+                        Kathy Buyna
+                    </div>
+                    <!-- Title -->
+                    <div class="bio-title gray">
+                        Head of Support Renewals
+                    </div>
+                    <!-- Popup Bio Text -->
+                    <div class="bio-paragraphs gray">
+                        <p>Kathy Buyna oversees MFGS, Inc.’s renewal business including the support renewals and the renewal operations organizations. Buyna was an essential leader and organizer of the creation of MFGS, Inc. and has more than 20 years of experience in the technology industry, including leadership positions at Hewlett-Packard and Micro Focus Government Solutions.</p>
+                        <p>She resides in Wake Forest, North Carolina with her family.</p>
+                    </div>
+                </div>
+                <!-- Close Button (X) -->
+                <div>
+                    <span class="close">&times;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Popup 5: Bill Bacci -->
+    <div id="popup5" class="bio">
+        <div class="bio-content">
+            <!-- Popup Window Content Layout Grid -->
+            <div class="bio-grid">
+                <!-- Popup Headshot (Left Column of Grid) -->
+                <div class="bio-headshot">
+                    <img src="https://static.mfgsinc.com/concrete/files/3815/8930/0383/Bill-Bacci200.png"
+                    alt="Bill Bacci headshot">
+                    <!-- Social Icons -->
+                    <div class="bio-social">
+                        <div class="twitter-popup-icon">
+                            <!-- Update Twitter URL here -->
+                            <a href="#" target="_blank">
+                                <img src="https://static.mfgsinc.com/concrete/files/9615/8654/3737/Twitter_Icon.png"
+                                class="icon" alt="Makheja Twitter icon">
+                            </a>
+                        </div>
+                        <div>
+                            <!-- Update LinkedIn URL here -->
+                            <a href="https://www.linkedin.com/in/william-bacci-a6b6272/" target="_blank">
+                                <img src="https://static.mfgsinc.com/concrete/files/1815/8654/3728/LinkedIn_Icon.png"
+                                class="icon" alt="Makheja LinkedIn icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Popup Text (Right Column of Grid) -->
+                <div class="bio-text">
+                    <!-- Name -->
+                    <div class="bio-name">
+                        Bill Bacci
+                    </div>
+                    <!-- Title -->
+                    <div class="bio-title gray">
+                        Head of Sales and Engineering
+                    </div>
+                    <!-- Popup Bio Text -->
+                    <div class="bio-paragraphs gray">
+                        <p>Bill Bacci oversees new license sales, first year support, and technical sales engineering for all government secure accounts. He has over 30 years of experience leading technical and sales teams in global companies with complex business models. Bacci has been an integral leader in many different roles across Hewlett Packard, Micro Focus, and MFGS, Inc. He currently supports all license revenue, hires key personnel, and provides integrated solutions for customers.
+                        </p>
+                        <p>Prior to joining MFGS, Inc., Bacci served as the DOD and Intel Sales Manager for Micro Focus Government Solutions and helped lead the merge of the entire secure sales team into the company. 
+                        </p>
+                        <p>Bacci also previously served as the Sales Vice President for Hewlett Packard and the Chief Technology Officer for Hewlett Packard’s Government Division, helping to double sales through technology evangelism and introducing new technology into the government sector. He also ran the professional services team where he successfully developed the introduction of commercial best practices into the federal space.
+                        </p>
+                        <p>Bacci began his career at Citicorp Consumer banking as Vice President for global communications, leading projects that rolled out global banking networks, application modernizations, and structuring.  
+                        </p>
+                        <p>Bacci earned a Bachelor of Science from Iona College and a Master of Business Administration in Finance from Marymount University. He also earned a CISSP and ITIL Master. He resides in Virginia with his wife and their three children.
+                        </p>
+                    </div>
+                </div>
+                <!-- Close Button (X) -->
+                <div>
+                    <span class="close">&times;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Popup 6: Christine Hand -->
+    <div id="popup6" class="bio">
+        <div class="bio-content">
+            <!-- Popup Window Content Layout Grid -->
+            <div class="bio-grid">
+                <!-- Popup Headshot (Left Column of Grid) -->
+                <div class="bio-headshot">
+                    <img src="https://static.mfgsinc.com/concrete/files/1315/8930/0389/Christine-Hand200.png"
+                    alt="Christine Hand headshot">
+                    <!-- Social Icons -->
+                    <div class="bio-social">
+                        <div class="twitter-popup-icon">
+                            <!-- Update Twitter URL here -->
+                            <a href="#" target="_blank">
+                                <img src="https://static.mfgsinc.com/concrete/files/9615/8654/3737/Twitter_Icon.png"
+                                class="icon" alt="Makheja Twitter icon">
+                            </a>
+                        </div>
+                        <div>
+                            <!-- Update LinkedIn URL here -->
+                            <a href="ttps://www.linkedin.com/in/christine-hand/" target="_blank">
+                                <img src="https://static.mfgsinc.com/concrete/files/1815/8654/3728/LinkedIn_Icon.png"
+                                class="icon" alt="Makheja LinkedIn icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Popup Text (Right Column of Grid) -->
+                <div class="bio-text">
+                    <!-- Name -->
+                    <div class="bio-name">
+                        Christine Hand
+                    </div>
+                    <!-- Title -->
+                    <div class="bio-title gray">
+                        Head of Marketing
+                    </div>
+                    <!-- Popup Bio Text -->
+                    <div class="bio-paragraphs gray">
+                        <p>Christine Hand is responsible for leading all digital, social, corporate, and field marketing programs supporting MFGS, Inc.’s go-to-market strategy and execution. Coming from a military family she is passionate about how technology supports and enables the mission of the U.S. Federal Government. 
+                        </p>
+                        <p>Hand was an essential leader in the creation of MFGS, Inc., creating and building the company brand and supporting the overall organizational design of the company. She has been a part of the integration management team and customer experience throughout the transition.
+                        </p>
+                        <p>Hand’s background includes over 10 years of expertise in public sector marketing. Prior to joining MFGS, Inc., she was a part of the integration management team during the spin-merge of HPE Software and Micro Focus International (IPO NYSE MFGP, Sept 2017) and served as marketing director for the U.S. Public Sector team at Micro Focus Government Solutions. Previously, Hand held positions as the marketing director for the software field marketing team at Hewlett Packard Enterprise as well as other marketing positions with Hewlett Packard focusing on the public sector as well as commercial markets. 
+                        </p>
+                        <p>Hand is a graduate of Minot State University, where she double-majored in business management and international business. She resides in Northern Virginia with her husband and daughter.
+                        </p>
+                    </div>
+                </div>
+                <!-- Close Button (X) -->
+                <div>
+                    <span class="close">&times;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Popup 7: Liz Van Hazinga -->
+    <div id="popup7" class="bio">
+        <div class="bio-content">
+            <!-- Popup Window Content Layout Grid -->
+            <div class="bio-grid">
+                <!-- Popup Headshot (Left Column of Grid) -->
+                <div class="bio-headshot">
+                    <img src="https://static.mfgsinc.com/concrete/files/3415/8930/0420/Liz-Van-Hazinga200.png"
+                    alt="Robert Makheja headshot">
+                    <!-- Social Icons -->
+                    <div class="bio-social">
+                        <div class="twitter-popup-icon">
+                            <!-- Update Twitter URL here -->
+                            <a href="#" target="_blank">
+                                <img src="https://static.mfgsinc.com/concrete/files/9615/8654/3737/Twitter_Icon.png"
+                                class="icon" alt="Makheja Twitter icon">
+                            </a>
+                        </div>
+                        <div>
+                            <!-- Update LinkedIn URL here -->
+                            <a href="https://www.linkedin.com/in/elizabethvanhazinga/" target="_blank">
+                                <img src="https://static.mfgsinc.com/concrete/files/1815/8654/3728/LinkedIn_Icon.png"
+                                class="icon" alt="Makheja LinkedIn icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Popup Text (Right Column of Grid) -->
+                <div class="bio-text">
+                    <!-- Name -->
+                    <div class="bio-name">
+                        Liz Van Hazinga
+                    </div>
+                    <!-- Title -->
+                    <div class="bio-title gray">
+                        Head of Operations
+                    </div>
+                    <!-- Popup Bio Text -->
+                    <div class="bio-paragraphs gray">
+                        <p>Elizabeth Van Hazinga oversees all operational activities, including performance management, business planning and analysis, forecasting, and process optimization. She is also a member of the company’s Governance Committee. Van Hazinga brings 20 years of operations and finance experience to MFGS, Inc. She is a proven, trusted advisor and leader in the development and implementation of operational strategy, with experience across several major mergers and acquisitions.
+                        </p>
+                        <p>Van Hazinga was an instrumental leader in the creation of MFGS, Inc., serving as project manager and overseeing the organizational design and operating structure used during the spinout, launch, and integration phases of the company across 2018 and 2019. Following the creation of the company,  she oversaw the development of standardized processes and performance reporting across all lines of business and continues to serve as a key member of the organization’s governance committee. In April of 2019, Van Hazinga was recognized with the President’s Star Eagle Award for her leadership.
+                        </p>
+                        <p>Prior to joining MFGS, Inc., Van Hazinga served as Operations Manager for the Americas during the merger of Hewlett Packard Enterprise (HPE) and Micro Focus, where she designed and implemented standard forecasting and planning processes and tools across multiple business units and geographies. Additionally, she spent many years as a finance manager supporting the Americas Network, Alliances, and Strategic Account business segments at Hewlett Packard in devising sales coverage strategies, minimizing field selling costs, and maximizing quarterly revenue.
+                        </p>
+                        <p>Van Hazinga holds a Bachelor in Business Administration from Assumption College and a Master of Business Administration from the University of Massachusetts. She lives in central Massachusetts with her husband and their three children.
+                        </p>
+
+                    </div>
+                </div>
+                <!-- Close Button (X) -->
+                <div>
+                    <span class="close">&times;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Popup 8: Elizabeth Hellman -->
+    <div id="popup8" class="bio">
+        <div class="bio-content">
+            <!-- Popup Window Content Layout Grid -->
+            <div class="bio-grid">
+                <!-- Popup Headshot (Left Column of Grid) -->
+                <div class="bio-headshot">
+                    <img src="https://static.mfgsinc.com/concrete/files/5015/8930/0401/Elizabeth-Hellman200.png"
+                    alt="Elizabeth Hellman headshot">
+                    <!-- Social Icons -->
+                    <div class="bio-social">
+                        <div class="twitter-popup-icon">
+                            <!-- Update Twitter URL here -->
+                            <a href="#" target="_blank">
+                                <img src="https://static.mfgsinc.com/concrete/files/9615/8654/3737/Twitter_Icon.png"
+                                class="icon" alt="Makheja Twitter icon">
+                            </a>
+                        </div>
+                        <div>
+                            <!-- Update LinkedIn URL here -->
+                            <a href="https://www.linkedin.com/in/elizabethhellman1/ " target="_blank">
+                                <img src="https://static.mfgsinc.com/concrete/files/1815/8654/3728/LinkedIn_Icon.png"
+                                class="icon" alt="Makheja LinkedIn icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Popup Text (Right Column of Grid) -->
+                <div class="bio-text">
+                    <!-- Name -->
+                    <div class="bio-name">
+                        Elizabeth Hellman
+                    </div>
+                    <!-- Title -->
+                    <div class="bio-title gray">
+                        Head of Corporate Communications and Public Relations
+                    </div>
+                    <!-- Popup Bio Text -->
+                    <div class="bio-paragraphs gray">
+                        <p>Elizabeth Hellman oversees all corporate relations for MFGS, Inc., including internal communications, PR, employee engagement and personnel matters. She has nearly 10 years of experience managing corporate functions and improving employee experience. 
+                        </p>
+                        <p>Hellman was an integral leader during the numerous merge phases of MFGS, Inc., being part of the integration management team and leading employee onboarding and engagement, as well as operational processes and planning. Hellman was instrumental in building the cultural of MFGS, Inc. and laying groundwork for the company’s philanthropic efforts. 
+                        </p>
+                        <p>Prior to joining MFGS, Inc., Hellman oversaw branding and content creation for the marketing team at Micro Focus Government Solutions. She led re-branding efforts of company materials following the spin-merge of Hewlett Packard Enterprise to Micro Focus, and was responsible for the creation of all marketing content for the Government space. She also held project management positions at USA TODAY where she led mobile application product development and audience acquisition efforts. Before that role, Hellman served as the marketing team lead on the Hewlett Packard Enterprise account at Carahsoft Technology Corporation. 
+                        </p>
+                        <p>Hellman holds a Bachelor of Arts in Public Relations and Advertising from Penn State University. She resides in Fairfax, Virginia. 
+                        </p>
+                    </div>
+                </div>
+                <!-- Close Button (X) -->
+                <div>
+                    <span class="close">&times;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Popup 9: Duane Pfister -->
+    <div id="popup9" class="bio">
+        <div class="bio-content">
+            <!-- Popup Window Content Layout Grid -->
+            <div class="bio-grid">
+                <!-- Popup Headshot (Left Column of Grid) -->
+                <div class="bio-headshot">
+                    <img src="https://static.mfgsinc.com/concrete/files/2115/8930/0395/Duane-Pfister200.png"
+                    alt="Duane Pfister headshot">
+                    <!-- Social Icons -->
+                    <div class="bio-social">
+                        <div class="twitter-popup-icon">
+                            <!-- Update Twitter URL here -->
+                            <a href="#" target="_blank">
+                                <img src="https://static.mfgsinc.com/concrete/files/9615/8654/3737/Twitter_Icon.png"
+                                class="icon" alt="Makheja Twitter icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Popup Text (Right Column of Grid) -->
+                <div class="bio-text">
+                    <!-- Name -->
+                    <div class="bio-name">
+                        Duane Pfister
+                    </div>
+                    <!-- Title -->
+                    <div class="bio-title gray">
+                        Head of Security
+                    </div>
+                    <!-- Popup Bio Text -->
+                    <div class="bio-paragraphs gray">
+                        <p>Duane Pfister is responsible for overseeing all company facilities and personnel security measures, including all security details of classified programs supporting the Intelligence Community (IC) and Department of Defense (DOD). He also supports the processing of clearances for multiple agencies and ensures company adherence to Federal Security regulations, policies, and procedures.
+                        </p>
+                        <p>Pfister was instrumental in supporting the stand-up and build-out of the MFGS, Inc. facility, as well as working with multiple government customers and MFGS, Inc. Contracts Department to assist the transfer of classified contracts and employee clearances.
+                        </p>
+                        <p>Pfister has nearly 25 years of government contracting experience, working with companies like Lockheed Martin, ManTech, SpecTal, SIG, Triple, Canopy and Constellis Group. Pfister has overseen security management, badging, physical security, and program security.   
+                        </p>
+                        <p>He holds certifications in the following areas: Security Specialist, Terrestrial COMSEC Management, Industrial Special Security Administration, Adjudicator Course and a Facility Security Officer Certification.
+                        </p>
+                        <p>Prior to his corporate career, Pfister served as a Security Specialist in the United States Air Force. He attended Northern Virginia Community College where he pursued a degree in Criminal Justice. He currently lives in Virginia with his family and enjoys hunting, fishing, and riding ATVs. 
+                        </p>
+                    </div>
+                </div>
+                <!-- Close Button (X) -->
+                <div>
+                    <span class="close">&times;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript" defer>
+    
+    /* Global Variable Declarations for Responsive Event Listener Below */
+    let x = window.matchMedia("(min-width: 600px)");
+    let y = window.matchMedia("(max-width: 599px)")
+    
+    /* Opener Event Listener for Bios */
+    const bioOpener = () => {
+        
+        /* Variable Declarations that specify which popup belongs to which set 
+        of clickable areas (AKA which popup should open for which leader card) */
+        let bio1 = document.querySelectorAll(".popup1");
+        let bio2 = document.querySelectorAll(".popup2");
+        let bio3 = document.querySelectorAll(".popup3");
+        let bio4 = document.querySelectorAll(".popup4");
+        let bio5 = document.querySelectorAll(".popup5");
+        let bio6 = document.querySelectorAll(".popup6");
+        let bio7 = document.querySelectorAll(".popup7");
+        let bio8 = document.querySelectorAll(".popup8");
+        let bio9 = document.querySelectorAll(".popup9");
+        
+        let bios = document.querySelectorAll(".bio");
+        
+        let dropdowns = document.querySelectorAll(".dropdown-leader");
+        
+        let leaderSummaries = document.querySelectorAll(".leaders-summary")
+        
+        /* Variable Declaration that specifies all X's belong to BioCloser array */
+        let bioCloser = document.querySelectorAll(".close");
+        
+        /* Loop that enables X's to change state of popup windows to Display: None
+        (AKA closed) with Event Listener */
+        for (i = 0; i < bioCloser.length; i++) {
+            bioCloser[i].addEventListener('click', function() {
+                // Changes any open popups to Display: None (AKA closes them)
+                for (j = 0; j < bios.length; j++) {
+                    if (bios[j].style.display === "block") {
+                        bios[j].style.display = "none";
+                    }
+                };
+            });
+        };
+        
+        /* Popup Bio server -- above 600px screen size */
+        
+        /* These Nested Loops make it so that dropdowns can't display above 600
+        pixels (still in progress) */
+        if (x.matches) {
+            for (i = 0; i < dropdowns.length; i++) {
+                // Closes any open Dropdowns
+                dropdowns[i].style.display = "none";
+                for (j = 0; j < leaderSummaries.length; j++) {
+                    if (leaderSummaries[j].style.display === "none") {
+                        leaderSummaries[j].style.display = "block";    
+                    };
+                };
+            };
+            
+            /* Opens first popup when specified elements (see variable declaration)
+            are clicked */
+            for (i = 0; i < bio1.length; i++) {
+                bio1[i].addEventListener('click', function () {
+                    document.getElementById("popup1").style.display = "block";
+                });
+            };
+            
+            for (i = 0; i < bio2.length; i++) {
+                bio2[i].addEventListener('click', function () {
+                    document.getElementById("popup2").style.display = "block";
+                });
+            };
+            
+            for (i = 0; i < bio3.length; i++) {
+                bio3[i].addEventListener('click', function () {
+                    document.getElementById("popup3").style.display = "block";
+                });
+            };
+            
+            for (i = 0; i < bio4.length; i++) {
+                bio4[i].addEventListener('click', function () {
+                    document.getElementById("popup4").style.display = "block";
+                });
+            };
+            
+            for (i = 0; i < bio5.length; i++) {
+                bio5[i].addEventListener('click', function () {
+                    document.getElementById("popup5").style.display = "block";
+                });
+            };
+            
+            for (i = 0; i < bio6.length; i++) {
+                bio6[i].addEventListener('click', function () {
+                    document.getElementById("popup6").style.display = "block";
+                });
+            };
+            
+            for (i = 0; i < bio7.length; i++) {
+                bio7[i].addEventListener('click', function () {
+                    document.getElementById("popup7").style.display = "block";
+                });
+            };
+            
+            for (i = 0; i < bio8.length; i++) {
+                bio8[i].addEventListener('click', function () {
+                    document.getElementById("popup8").style.display = "block";
+                });
+            };
+            
+            for (i = 0; i < bio9.length; i++) {
+                bio9[i].addEventListener('click', function () {
+                    document.getElementById("popup9").style.display = "block";
+                });
+            };
+            
+        /* Dropdown Bio server -- below 599px screen size */    
+        } else if (y.matches) {
+            for (i = 0; i < bios.length; i++) {
+                bios[i].style.display = "none";
+            };
+            
+            /* Opens first dropdown when specified elements are clicked below 
+            599px screen size */
+            for (i = 0; i < bio1.length; i++) {
+                bio1[i].addEventListener('click', function () {
+                    let dropdown1 = document.getElementById("dropdown1");
+                    let makhejaSummary = document.getElementById("makheja-summary-text");
+                    let makhejaReadMore = document.getElementById("read-more-cta-1");
+                    if (dropdown1.style.display === "none") {
+                            dropdown1.style.display = "block";
+                            makhejaSummary.style.display = "none";
+                            makhejaReadMore.innerHTML = "Read More x";
+                        } else {
+                            dropdown1.style.display = "none";
+                            makhejaSummary.style.display = "block";
+                            makhejaReadMore.innerHTML = "Read More +";
+                    };
+                });
+            };
+            
+            for (i = 0; i < bio2.length; i++) {
+                bio2[i].addEventListener('click', function () {
+                    let dropdown2 = document.getElementById("dropdown2");
+                    let rittingerSummary = document.getElementById("rittinger-summary-text");
+                    let rittingerReadMore = document.getElementById("read-more-cta-2");
+                    if (dropdown2.style.display === "none") {
+                            dropdown2.style.display = "block";
+                            rittingerSummary.style.display = "none";
+                            rittingerReadMore.innerHTML = "Read More x";
+                        } else {
+                            dropdown2.style.display = "none";
+                            rittingerSummary.style.display = "block";
+                            rittingerReadMore.innerHTML = "Read More +";
+                    };
+                });
+            };
+            
+            for (i = 0; i < bio3.length; i++) {
+                bio3[i].addEventListener('click', function () {
+                    let dropdown3 = document.getElementById("dropdown3");
+                    let priceSummary = document.getElementById("price-summary-text");
+                    let priceReadMore = document.getElementById("read-more-cta-3");
+                    if (dropdown3.style.display === "none") {
+                            dropdown3.style.display = "block";
+                            priceSummary.style.display = "none";
+                            priceReadMore.innerHTML = "Read More x";
+                        } else {
+                            dropdown3.style.display = "none";
+                            priceSummary.style.display = "block";
+                            priceReadMore.innerHTML = "Read More +";
+                    };
+                });
+            };
+            
+            for (i = 0; i < bio4.length; i++) {
+                bio4[i].addEventListener('click', function () {
+                    let dropdown4 = document.getElementById("dropdown4");
+                    let buynaSummary = document.getElementById("buyna-summary-text");
+                    let buynaReadMore = document.getElementById("read-more-cta-4");
+                    if (dropdown4.style.display === "none") {
+                            dropdown4.style.display = "block";
+                            buynaSummary.style.display = "none";
+                            buynaReadMore.innerHTML = "Read More x";
+                        } else {
+                            dropdown4.style.display = "none";
+                            buynaSummary.style.display = "block";
+                            buynaReadMore.innerHTML = "Read More +";
+                    };
+                });
+            };
+            
+            for (i = 0; i < bio5.length; i++) {
+                bio5[i].addEventListener('click', function () {
+                    let dropdown5 = document.getElementById("dropdown5");
+                    let bacciSummary = document.getElementById("bacci-summary-text");
+                    let bacciReadMore = document.getElementById("read-more-cta-5");
+                    if (dropdown5.style.display === "none") {
+                            dropdown5.style.display = "block";
+                            bacciSummary.style.display = "none";
+                            bacciReadMore.innerHTML = "Read More x";
+                        } else {
+                            dropdown5.style.display = "none";
+                            bacciSummary.style.display = "block";
+                            bacciReadMore.innerHTML = "Read More +";
+                    };
+                });
+            };
+            
+            for (i = 0; i < bio6.length; i++) {
+                bio6[i].addEventListener('click', function () {
+                    let dropdown6 = document.getElementById("dropdown6");
+                    let handSummary = document.getElementById("hand-summary-text");
+                    let handReadMore = document.getElementById("read-more-cta-6");
+                    if (dropdown6.style.display === "none") {
+                            dropdown6.style.display = "block";
+                            handSummary.style.display = "none";
+                            handReadMore.innerHTML = "Read More x";
+                        } else {
+                            dropdown6.style.display = "none";
+                            handSummary.style.display = "block";
+                            handReadMore.innerHTML = "Read More +";
+                    };
+                });
+            };
+            
+            for (i = 0; i < bio7.length; i++) {
+                bio7[i].addEventListener('click', function () {
+                    let dropdown7 = document.getElementById("dropdown7");
+                    let hazingaSummary = document.getElementById("hazinga-summary-text");
+                    let hazingaReadMore = document.getElementById("read-more-cta-7");
+                    if (dropdown7.style.display === "none") {
+                            dropdown7.style.display = "block";
+                            hazingaSummary.style.display = "none";
+                            hazingaReadMore.innerHTML = "Read More x";
+                        } else {
+                            dropdown7.style.display = "none";
+                            hazingaSummary.style.display = "block";
+                            hazingaReadMore.innerHTML = "Read More +";
+                    };
+                });
+            };
+            
+            for (i = 0; i < bio8.length; i++) {
+                bio8[i].addEventListener('click', function () {
+                    let dropdown8 = document.getElementById("dropdown8");
+                    let hellmanSummary = document.getElementById("hellman-summary-text");
+                    let hellmanReadMore = document.getElementById("read-more-cta-8");
+                    if (dropdown8.style.display === "none") {
+                            dropdown8.style.display = "block";
+                            hellmanSummary.style.display = "none";
+                            hellmanReadMore.innerHTML = "Read More x";
+                        } else {
+                            dropdown8.style.display = "none";
+                            hellmanSummary.style.display = "block";
+                            hellmanReadMore.innerHTML = "Read More +";
+                    };
+                });
+            };
+            
+            for (i = 0; i < bio9.length; i++) {
+                bio9[i].addEventListener('click', function () {
+                    let dropdown9 = document.getElementById("dropdown9");
+                    let pfisterSummary = document.getElementById("pfister-summary-text");
+                    let pfisterReadMore = document.getElementById("read-more-cta-9");
+                    if (dropdown9.style.display === "none") {
+                            dropdown9.style.display = "block";
+                            pfisterSummary.style.display = "none";
+                            pfisterReadMore.innerHTML = "Read More x";
+                        } else {
+                            dropdown9.style.display = "none";
+                            pfisterSummary.style.display = "block";
+                            pfisterReadMore.innerHTML = "Read More +";
+                    };
+                });
+            };
+        };
+    };
+
+    bioOpener(); // Call listener function at run time (when page loads)
+    x.addListener(bioOpener); // Attach listener function on state changes
+    y.addListener(bioOpener); // Attach listener function on state changes
+</script>
+<!-- HTML, Internal Style Sheet and JavaScript written by Stephen A. Roddewig -->
+
+
+    
+
+    <div class="whitebg">
+      <div class="container">
+              </div>
+    </div>
+
+      </div>
+  <!--
+  ***************************
+  SITE-FOOTER
+  ***************************
+  -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <a class="site-footer__icon" href="#"><img src="https://www.mfgsinc.com/packages/carahsoft_theme/themes/mfgs/img/mfgs-logo.png" alt="MFGS - Micro Focus Government Solutions Master Supplier"/></a>
+          <div class="site-footer__description">
+            <p class="site-footer__info">1430 Spring Hill Road, Suite 401 | McLean, VA 22102 | 844-MFGSINC </p>
+            <ul class="site-footer__social-links">
+<!--
+              <li>
+                <a href="https://facebook.com">
+                <img src="/packages/carahsoft_theme/themes/mfgs/img/facebook.svg" height="28" width="28"/>
+                <span class="sr-only">Facebook</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com">
+                  <img src="/packages/carahsoft_theme/themes/mfgs/img/twitter.svg" height="22"
+                  width="22"/>
+                  <span class="sr-only">Twitter</span>
+                </a>
+              </li>
+-->
+              <li>
+                <a href="https://www.linkedin.com/company/mfgs-inc/">
+                  <img height="22" width="22" src="https://www.mfgsinc.com/packages/carahsoft_theme/themes/mfgs/img/linkedin.svg"/>
+                  <span class="sr-only">LinkedIn</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://www.mfgsinc.com/packages/carahsoft_theme/themes/mfgs/js/bootstrap.min.js"></script>
+  <script src="https://www.mfgsinc.com/packages/carahsoft_theme/themes/mfgs/js/sticky-nav.js"></script>
+  
+  </body>
+
+</html>
