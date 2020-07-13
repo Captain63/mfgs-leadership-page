@@ -1,0 +1,266 @@
+html {
+    background: #2880db;
+  }
+  
+  body {
+    background: transparent url("/packages/carahsoft_theme/themes/mfgs/img/mfgs-background.png") repeat;
+    background-size: contain;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    min-height: 768px;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-weight: 700;
+  }
+  
+  p { color: #6b7c94; }
+  
+  /* BUTTONS */
+  .btn.btn-primary {
+    background-color: #231CA5;
+    border-color: #231CA5;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 10px 30px;
+  }
+  .btn.btn-primary:hover, .btn.btn-primary:focus {
+    background-color: #00b4ff;
+    border-color: #00b4ff;
+  }
+  .btn.btn-secondary {
+    background-color: #0079ee;
+    border-color: #0079ee;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 15px 30px;
+  }
+  .btn.btn-secondary:hover, .btn.btn-secondary:focus {
+    background-color: #00b4ff;
+    border-color: #00b4ff;
+  }
+  
+  /* SECTION TITLES */
+  .section-title {
+    font-weight: 700;
+    line-height: 1;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .section-title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-bottom: 2px solid #00b4ff;
+    width: 50px;
+    bottom: 0;
+    right:0;
+    left: 0;
+  }
+  
+  .section-title.section-title--centered::before {
+    margin: 0 auto;
+  }
+  
+  .section-title.section-title--green::before {
+    border-color: #2fd5a8;
+  }
+  
+  /* FORMS */
+  .form-group label {
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+  }
+  .form-group input {
+    border-radius: 3px;
+    padding: 16px;
+  }
+  .form-group textarea {
+    font-size: 14px;
+    resize: vertical;
+    border-radius: 3px;
+    padding: 16px;
+  }
+  .form-group.required label::before {
+    color: #2fd5a8;
+    content: "*";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -10px;
+  }
+  form button[type="submit"] {
+    margin-top: 10px;
+    float: right;
+  }
+  
+  /* SITE-HEADER */
+  .site-header {
+    background-color: rgba(0,0,0,0.15);
+    color: #fff;
+  }
+  .site-header__wrapper {
+    float:right;
+  }
+  .site-header__info {
+    display: inline-block;
+    margin: 0;
+    padding: 15px 0;
+    font-size: 16px;
+  }
+  .site-header__info a {
+    color: #fff;
+  }
+  .site-header__social-links {
+    display: inline-block;
+    list-style: none;
+    margin:0;
+    padding:0 0 0 10px;
+  }
+  .site-header__social-links li {
+    display: inline-block;
+    padding-right: 10px;
+  }
+  .site-header__social-links li:first-of-type {
+    padding-right: 5px;
+  }
+  .site-search {
+    display: inline-block;
+    margin-top: 13px;
+    padding-left: 10px;
+    position: relative;
+  }
+  .site-search input {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 20px;
+    font-size:12px;
+    padding: 12px;
+    height: 20px;
+  }
+  .site-search svg {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+  }
+  .site-search input::placeholder {
+    color:#fff;
+  }
+  
+  /* PRIMARY-NAVIGATION */
+  .primary-navigation .nav-item {
+    padding: 0 0 0 20px;
+    text-transform: uppercase;
+  }
+  .primary-navigation .nav-item.active {
+    text-decoration: underline;
+  }
+  .primary-navigation .navbar-nav .nav-item .nav-link {
+    color: #fff;
+    font-size: 16px;
+  }
+  .primary-navigation .navbar-nav .nav-item .nav-link:hover {
+    text-decoration: underline;
+  }
+  .primary-navigation .navbar {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .primary-navigation .navbar-brand img {
+    max-width: 145px;
+    padding: 21px 0;
+  }
+  .primary-navigation .btn-secondary {
+    padding: 6px 15px;
+  }
+  .isScrolled .primary-navigation {
+    background-color: #0079ee;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  .isScrolled .primary-navigation .btn-secondary {
+    border-color: #fff;
+  }
+  .isScrolled .primary-navigation .navbar-brand img {
+    padding: 5px 0;
+  }
+  .isScrolled .primary-navigation__offset {
+    height: 120px;
+  }
+  
+  /* SITE-FOOTER */
+  .site-footer {
+    padding: 20px 0;
+    text-align: center;
+  }
+  .site-footer__icon img{
+    max-width: 150px;
+    display: inline-block;
+  }
+  .site-footer__description {
+    padding-top: 10px;
+  }
+  .site-footer__info {
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+  }
+  .site-footer__social-links {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .site-footer__social-links li {
+    display: inline-block;
+  }
+  @media (min-width: 992px) {
+    .site-footer { text-align: left; }
+    .site-footer__description {
+      float:right;
+    }
+    .site-footer__social-links {
+      display: inline-block;
+    }
+    .site-footer__social-links li {
+      padding-left: 10px;
+    }
+  }
+  
+  .whitebg{
+    background-color: #f2f7fb !important;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
