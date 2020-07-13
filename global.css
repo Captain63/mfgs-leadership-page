@@ -3,7 +3,7 @@ html {
   }
   
   body {
-    background: transparent url("/packages/carahsoft_theme/themes/mfgs/img/mfgs-background.png") repeat;
+    background: transparent url("Images\mfgs-logo.png") repeat;
     background-size: contain;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 400;
