@@ -1678,6 +1678,7 @@
     </div>
 </section>
 
+<!-- Section for review -->
 <script type="text/javascript" defer>
     
     /* Global Variable Declarations for Responsive Event Listener Below */
@@ -1705,10 +1706,10 @@
         
         let leaderSummaries = document.querySelectorAll(".leaders-summary")
         
-        /* Variable Declaration that specifies all X's belong to BioCloser array */
+        /* Variable Declaration that specifies all 'X's belong to BioCloser array */
         let bioCloser = document.querySelectorAll(".close");
         
-        /* Loop that enables X's to change state of popup windows to Display: None
+        /* Loop that enables 'X's to change state of popup windows to Display: None
         (AKA closed) with Event Listener */
         for (i = 0; i < bioCloser.length; i++) {
             bioCloser[i].addEventListener('click', function() {
@@ -1816,6 +1817,8 @@
                     };
                 });
             };
+            /* Hoping to find a way to make these less bulky and easier to update if a leader should leave
+            or the order on the page needs to be changed. Maybe classes could help here? */
             
             for (i = 0; i < bio2.length; i++) {
                 bio2[i].addEventListener('click', function () {
@@ -1956,6 +1959,9 @@
     };
 
     bioOpener(); // Call listener function at run time (when page loads)
+    /* Is there a way to make this run whenever the viewport size changes? Otherwise, popup event listeners
+    can be loaded on a large screen, then still show up if the user shrinks the screen after the inital page
+    load */
     x.addListener(bioOpener); // Attach listener function on state changes
     y.addListener(bioOpener); // Attach listener function on state changes
 </script>
